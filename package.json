@@ -1,0 +1,8 @@
+{
+  "name": "squirrelzoo-build-plugin",
+  "version": "1.0.0",
+  "description": "vue build info plugin",
+  "main": "index.js",
+  "author": "pumelotea",
+  "license": "ISC"
+}
