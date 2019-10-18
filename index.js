@@ -42,7 +42,7 @@ function fsExistsSync(path) {
 }
 
 const SquirrelZooBuildPlugin = {
-  apply:()=>{
+  apply:(plugName)=>{
     let json = fs.readFileSync('package.json','utf-8')
     const pj = JSON.parse(json)
 
@@ -78,9 +78,8 @@ const SquirrelZooBuildPlugin = {
     console.log('    / /_/ /_/ / /_/ /                      ')
     console.log('   /___/\\____/\\____/      ')
     console.log('')
-    console.log('  official site : https://squirrelzoo.com')
-    console.log('  docs address  : https://www.squirrelzoo.com/archives/1283')
-    console.log('  version       : '+pj.devDependencies["vue-cli-plugin-pumelo-tea"])
+    console.log('  official site : https://www.squirrelzoo.com')
+    console.log('  version       : '+pj.devDependencies[plugName])
     console.log('--------------------------------------------------------------')
     console.log('| project name     |', pj.name)
     console.log('| building branch  |', branch)
